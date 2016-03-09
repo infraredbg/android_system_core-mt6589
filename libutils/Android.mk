@@ -91,7 +91,7 @@ LOCAL_CFLAGS += -DALIGN_DOUBLE
 endif
 LOCAL_CFLAGS += -Werror
 
-ifeq ($(TARGET_BOARD_PLATFORM),mt6592)
+ifneq (,$(filter mt6582 mt6589 mt6592,$(TARGET_BOARD_PLATFORM)))
 LOCAL_SRC_FILES += MediatekHacks.cpp
 endif
 
