@@ -82,7 +82,7 @@ static void wait_for_user_action(const debugger_request_t &request) {
         "*\n"
         "* Wait for gdb to start, then press the VOLUME DOWN key\n"
         "* to let the process continue crashing.\n"
-        "********************************************************",
+        "********************************************************\n",
         request.pid, exe, request.tid, exe, request.tid);
 
   // Wait for VOLUME DOWN.
